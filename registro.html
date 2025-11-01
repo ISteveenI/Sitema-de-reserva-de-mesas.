@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+    <h1>Registro de Nuevo Usuario</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="registro.html">Registrarse</a>
+    </nav>
+</header>
+
+<main>
+    <form id="formRegistro" onsubmit="return validarRegistro()">
+        <label>Usuario:</label>
+        <input type="text" id="usuarioRegistro" required>
+
+        <label>Contraseña:</label>
+        <input type="password" id="pass1" onkeyup="medirFuerzaContrasena()" required>
+        <p id="fuerzaPass" style="font-size: 13px;"></p>
+
+        <label>Confirmar contraseña:</label>
+        <input type="password" id="pass2" required>
+        <p id="errorPass" style="font-size: 13px;"></p>
+
+        <button type="submit">Registrarse</button>
+    </form>
+</main>
+
+<script src="validaciones.js"></script>
+</body>
+<body class="registro-page">
+  <div class="contenedor-formulario">
+    <h2>Registro</h2>
+  </div>
+</body>
+</html>
+
+

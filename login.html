@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+    <h1>Acceso de Usuarios</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="registro.html">Registrarse</a>
+    </nav>
+</header>
+
+<main>
+    <form id="formLogin" onsubmit="return validarLogin()">
+        <label>Usuario:</label>
+        <input type="text" id="usuario" required>
+        
+        <label>Contraseña:</label>
+        <input type="password" id="contrasena" required>
+        
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <button onclick="cerrarSesion()" style="margin-top:15px;">Cerrar sesión</button>
+</main>
+<script src="validaciones.js"></script>
+</body>
+<body class="login-page">
+  <div class="contenedor-formulario">
+    <h2>Iniciar Sesión</h2>
+  </div>
+</body>
+</html>
