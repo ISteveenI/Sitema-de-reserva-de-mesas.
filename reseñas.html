@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dejar Reseña</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+    <h1>Dejar Reseña</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="reservas.html">Reservar</a>
+        <a href="reseñas.html">Reseñas</a>
+    </nav>
+</header>
+
+<main>
+    <form id="formReseña" onsubmit="return validarReseña()">
+        <label>Nombre del cliente:</label>
+        <input type="text" id="nombreReseña" required>
+
+        <label>Comentario:</label>
+        <textarea id="comentario" rows="4" required></textarea>
+
+        <label>Calificación (1-5):</label>
+        <input type="number" id="calificacion" min="1" max="5" required>
+
+        <button type="submit">Enviar Reseña</button>
+    </form>
+</main>
+
+<script src="validaciones.js"></script>
+</body>
+<script>
+    verificarSesion();
+</script>
+<body class="resenas-page">
+  <div class="contenedor-formulario">
+    <h2>Reseñas</h2>
+  </div>
+</body>
+</html>

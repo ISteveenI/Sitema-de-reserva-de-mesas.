@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+    <h1>Registro de Información del Cliente</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="reservas.html">Reservar</a>
+    </nav>
+</header>
+
+<main>
+    <form id="formInfo" onsubmit="return validarInformacion()">
+        <label>Nombre del cliente:</label>
+        <input type="text" id="nombreCliente" required>
+
+        <label>Teléfono:</label>
+        <input type="tel" id="telefono" required>
+
+        <label>Dirección:</label>
+        <input type="text" id="direccion" required>
+
+        <button type="submit">Guardar Información</button>
+    </form>
+</main>
+<script src="validaciones.js"></script>
+</body>
+<script>
+    verificarSesion();
+</script>
+<body class="clientes-page">
+  <div class="contenedor-formulario">
+    <h2>Registro de Clientes</h2>
+  </div>
+</body>
+</html>
+
